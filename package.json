@@ -1,10 +1,12 @@
 {
-  "name": "react-way-of-samurai",
+  "name": "57",
   "version": "0.1.0",
+  "homepage": "https://irassl.github.io/57",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
     "formik": "^2.2.9",
+    "gh-pages": "^5.0.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-redux": "^6.0.1",
@@ -17,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
